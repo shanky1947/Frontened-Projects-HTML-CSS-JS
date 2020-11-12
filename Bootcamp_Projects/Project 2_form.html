@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <label for="fname">First Name:</label>
+        <input id="fname" type="text" placeholder="John" required>
+        <label for="lname">Last Name:</label>
+        <input id="lname" type="text" placeholder="Smith" required>
+        <div>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="male">
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio" value="female">
+            <label for="other">Other</label>
+            <input name="gender" id="other" type="radio" value="other">
+        </div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="your email" required>
+        <label for="epass">Password:</label>
+        <input id="epass" type="password" maxlength="10" minlength="5" required>
+        <label for="birth">Birthday</label>
+        <select id="birth">
+            <option>Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+        </select>
+        <select id="birth">
+            <option>Day</option>
+            <option>10</option>
+            <option>11</option>
+        </select>
+        <select id="birth">
+            <option>Year</option>
+            <option>1998</option>
+            <option>1999</option>
+        </select><br />
+        <label for="agree">I agree to the terms and conditions</label>
+        <input id="agree" type="checkbox"><br />
+        <button>Submit</button>
+    </form>
+</body>
+</html>

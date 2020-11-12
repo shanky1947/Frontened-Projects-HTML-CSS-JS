@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+td {
+    width:100px;
+    height: 100px;
+}
+
+.ver{
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.hor {
+    border-top: 1px black solid ;
+    border-bottom: 1px black solid;
+}
+table {
+    margin: auto;
+}
