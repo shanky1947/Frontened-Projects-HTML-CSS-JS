@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="mainheader">
+        <img src="vitlogo.png">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="activities.html">Department Activities</a></li>
+                <li><a href="faculty.html">Faculty Details</a></li>
+                <li><a href="placements.html">Placements</a></li>
+                <li class="active"><a href="coe.html">COE</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <div class="mainContent">
+        <div class="content">
+            <article class="topcontent">
+                <header>
+                    <h2><a href="#">VIT</a></h2>
+                </header>
+                <content>
+                    <h2><a href="#">Controller of Examination (COE)</a></h2>
+                    <h3><a href="#">Exam Time Table</a></h3>
+                    <table border="1" width="880px" cellpadding="15" cellspacing="1" bgcolor="lightgray">
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Slot</th>
+                                <th>Subject Name</th>
+                                <th>Room No.</th>
+                                <th>Date</th>
+                                <th colspan=2>Start Time</th>
+                                <th colspan=2>Finish Time</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Arrive</td>
+                                <td>Start</td>
+                                <td>Finish</td>
+                                <td>Leave</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>A1</td>
+                                <td>IWP</td>
+                                <td>SJT 514</td>
+                                <td>02-04-20</td>
+                                <td>09:00</td>
+                                <td>09:15</td>
+                                <td>10:45</td>
+                                <td>11:00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>B1</td>
+                                <td>PDC</td>
+                                <td>SJT 214</td>
+                                <td>03-04-20</td>
+                                <td>09:00</td>
+                                <td>09:15</td>
+                                <td>10:45</td>
+                                <td>11:00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>C1</td>
+                                <td>NLP</td>
+                                <td>SJT 114</td>
+                                <td>04-04-20</td>
+                                <td>09:00</td>
+                                <td>09:15</td>
+                                <td>10:45</td>
+                                <td>11:00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>D1</td>
+                                <td>AI</td>
+                                <td>SJT 514</td>
+                                <td>05-04-20</td>
+                                <td>09:00</td>
+                                <td>09:15</td>
+                                <td>10:45</td>
+                                <td>11:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3><a href="#">Result</a></h3>
+                    
+                    <!-- <form class="modal">
+                        <div class="container">
+                            <label for="username">Reg. No.:</label>
+                            <input id="username" name="username" type="text" placeholder="Enter the reg. no." required><br /><br />
+                            <label for="password">Password:</label>
+                            <input id="password" name="password" type="password" placeholder="Enter the password" required><br /><br />
+                        </div>
+                        <button>Result</button>
+                    </form>
+                    </div> -->
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate">
+                    
+                        <div class="container">
+                            <label for="uname"><b>Reg. No.</b></label>
+                            <input type="text" placeholder="Enter Reg. No." name="uname" required>
+                    
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                            <button type="submit">Result</button>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                        </form>
+                    </div>
+                </content>
+            </article>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <article>
+            <img src="ac17.jpg">
+            <img src="act18.jpg">
+            <img src="act19.jpg">
+        </article>
+    </div>
+    <footer class="mainFooter">
+        <p>Copyright &copy; vit.ac.com</p>
+    </footer>
+</body>
+</html>

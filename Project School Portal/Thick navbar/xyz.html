@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web\css\all.css">
+
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    ul {
+        padding: 0%;
+    }
+
+    ul li {
+        list-style: none;
+        padding: 20px;
+        margin-bottom: 30px;
+        color: grey;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        transform: translateX(-170px);
+    }
+
+    i {
+        font-size: 30px;
+    }
+
+
+    .text {
+        float: left;
+        padding-right: 10px;
+        font-size: 25px;
+        text-align: right;
+        min-width: 150px;
+        font-variant: small-caps;
+    }
+
+
+    li:hover {
+        /* color: black; */
+        border-radius: 0 30px 30px 0;
+        /* border: 2px solid black; */
+        animation: anim 1s ease forwards;
+    }
+
+    @keyframes anim {
+        0% {
+            transform: translateX(-100px) scalex(0.5);
+        }
+
+        100% {
+            background: white;
+            color: #7d5a5a;
+            transform: translateX(30px);
+        }
+    }
+</style>
+
+<body>
+    <div id="navbar">
+
+        <ul>
+            <li><i id="icon" class="fas fa-home"><span class="text">Home</span></i></li>
+            <li><i id="icon" class="far fa-calendar-alt"><span class="text">Time </span></i></li>
+            <li><i id="icon" class="fas fa-user-tie"><span class="text">Faculty</span></i></li>
+            <li><i id="icon" class="fas fa-calendar-check"><span class="text">Attendan</span></i></li>
+            <li><i id="icon" class="fas fa-book"><span class="text">Course p</span></i></li>
+            <li><i id="icon" class="fas fa-file-code"><span class="text">Submit </span></i></li>
+            <li><i id="icon" class="fas fa-file-powerpoint"><span class="text">About </span></i></li>
+        </ul>
+    </div>
+</body>
+
+</html>

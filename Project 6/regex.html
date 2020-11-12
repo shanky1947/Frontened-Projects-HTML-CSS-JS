@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+        <label for="input">Input</label><br> 
+        <input type="text" id="unique" name="name"><br>
+        <button onclick="test()">Submit</button>
+  
+    <p id="t"></p>
+    
+    <script>
+        function test(){
+            var str1=document.getElementById("unique").value;
+            var p = str1.search(/pickup|pick-up/);
+            t1=p.length;
+            var r=str1.search(/red/);
+            if(p+t1+1!=r)
+                document.getElementById("t").innerHTML = "Not found";
+            else
+                document.getElementById("t").innerHTML = p+t;
+        }
+    </script>
+</body>
+</html>

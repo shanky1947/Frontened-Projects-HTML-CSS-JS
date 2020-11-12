@@ -1,0 +1,47 @@
+.parent {
+  position: relative;
+  height: 200px;
+  border: 3px solid greenyellow;
+}
+.parent2 {
+  position: relative;
+  height: auto;
+  border: 3px solid greenyellow;
+}
+.absolute {
+  position: absolute;
+  width: 50%;
+  bottom: 80px;
+  border: 3px solid blue;
+}
+
+.relative {
+  position: relative;
+  width: 50%;
+  bottom: 2px;
+  border: 3px solid blue;
+}
+
+.fixed {
+  position: fixed;
+  width: 50%;
+  bottom: 10px;
+  left:50%;
+  background-color: cyan;
+  border: 3px solid blue;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: cyan;
+  border: 3px solid blue;
+}
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  z-index: -1;
+}

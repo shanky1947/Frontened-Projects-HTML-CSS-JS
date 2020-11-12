@@ -1,0 +1,38 @@
+.circle {
+    margin-top: 30%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    /* background: blue; */
+    border-radius: 50%;
+    background: -webkit-radial-gradient(25px 25px, circle, blue, #000);
+    animation: spin 2000ms linear infinite, moveLeftToRight 5s linear infinite;
+    transition: all 1s ease;
+    position: absolute;
+  }
+
+  .rectangle {
+    margin-top: 30%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    /* background: blue; */
+    background: -webkit-radial-gradient(25px 25px, green, #000);
+    animation: spin 2000ms linear infinite, moveLeftToRight 7s linear infinite;
+    transition: all 1s ease;
+    position: absolute;
+  }
+
+  @keyframes spin {
+    from { 
+      transform: rotate(0deg); 
+    }
+    to { 
+      transform: rotate(360deg); 
+    }
+  }
+
+  @keyframes moveLeftToRight {
+    0%   { left: -200px; }
+    100% { left: 100%; }
+  }

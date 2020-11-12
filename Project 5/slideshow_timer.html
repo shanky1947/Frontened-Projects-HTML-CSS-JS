@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img name="slide"  src="1.jpeg" id="Imgs" alt="image" width="500" height="300"><br>
+    <button onclick="nextImg()">Next</button>    
+    <button onclick="prevImg()">Previous</button><br><br>
+
+    <input id="ad" type="text" placeholder="Enter URL of image">
+    <button onclick="addImg()">Add</button><br><br>
+
+    <button onclick="timer()">Timer</button>
+    <p id="time"></p>
+    
+    <script>
+        var i=1;
+        var j=0;
+        var img=[]
+        img[0]="1.jpeg";
+        img[1]="2.png";
+        img[2]="3.jpg";
+        function nextImg(){
+            document.getElementById('Imgs').src = img[i];
+            if(i<img.length-1){
+                j=i;
+                i++;
+            }
+            else{
+                i=0;
+            }
+        }
+
+        function prevImg(){
+            i=j;
+            if(j>=0){
+                j--;
+            }
+            else{
+                j=0;
+            }
+            document.getElementById('Imgs').src = img[j];
+        }
+        function addImg(){
+            var nameValue = document.getElementById("ad").value;
+            img.push(nameValue);
+        }
+        function timer(){
+            startTime();
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('time').innerHTML=h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  
+                return i;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html>
+    <head>
+        
+        <title>Appointment form</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        
+        <div class="container"><br>
+            <h1 class="text-success text-center">Doctor's Appointment</h1><br>
+            <div class="col-lg-8 m-auto d-block">
+                <form action="#" onsubmit="return validation()" class="bg-light">
+                
+                    <div class="form-group">
+                        <label>Patient Name:</label>
+                        <input type="text" name="user" class="form-control" id="user" autocomplete="off">
+                    <span id="username" class="text-danger" ></span>      
+                    </div>
+                    <div class="form-group">
+                        <label>Age:</label>
+                        <input type="text" name="age" class="form-control" id="age" autocomplete="off">
+                        <span id="age1" class="text-danger" ></span>        
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <input type="text" name="gender" class="form-control" id="gender" autocomplete="off">
+                        <span id="gender1" class="text-danger" ></span> 
+                            </div>
+                    <div class="form-group">
+                         <label>No.of Visits:</label>
+                         <input type="text" name="visits" class="form-control" id="visits" autocomplete="off">
+                         <span id="visits1" class="text-danger" ></span> 
+                             </div>
+                     <div class="form-group">
+                         <label>Appointment Date:</label>
+                         <input type="date" name="date" class="form-control" id="date" autocomplete="off">
+                         <span id="date1" class="text-danger" ></span> 
+                             </div>
+                    <div class="form-group">
+                         <label>Department:</label>
+                         <input type="text" name="department" class="form-control" id="department" autocomplete="off">
+                         <span id="department1" class="text-danger" ></span> 
+                             </div><br>
+
+                             <input type="submit" name="submit" value="submit" class="btn btn-success">
+                        
+                
+                
+                
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javaScript">
+
+            function validation(){
+                var user = document.getElementById('user').value; 
+                var age = document.getElementById('age').value;
+                var gender = document.getElementById('gender').value;
+                var visits = document.getElementById('visits').value;
+                var Appointment = document.getElementById('date').value;
+                var department = document.getElementById('department').value;
+            
+
+
+            if(user == ""){
+              document.getElementById('username').innerHTML =" * *please Fill the name"  ;
+              return false;
+            }
+            
+            if(age == ""){
+              document.getElementById('age1').innerHTML =" * *please Fill the age"  ;
+              return false;
+            }
+            if(isNaN(age)){
+                document.getElementById('age1').innerHTML =" * *Only numbers are allowed"  ;
+              return false;
+            }
+            if(gender == ""){
+              document.getElementById('gender1').innerHTML =" * *please Fill the gender"  ;
+              return false;
+            }
+            if(visits == ""){
+              document.getElementById('visits1').innerHTML =" * *please Fill the visits"  ;
+              return false;
+            }
+
+            if(Appointment == ""){
+              document.getElementById('date1').innerHTML =" * *Doctor is in Vactation these days"  ;
+              return false;
+            }
+            
+            
+            if(department.match ("Paediatrician")){
+              document.getElementById('department1').innerHTML =" * *Department not specified"  ;
+              return false;
+            }
+            }
+        </script>
+
+
+    </body>
+    </html>

@@ -1,0 +1,250 @@
+body{
+    font-family:'Balsamiq Sans', cursive;
+margin:0px;
+padding 0px;
+/* background:url('IMG/faculty.jpg'); */
+color:white;
+/* background-color:rgb(233, 227, 227); */
+background-color: #f7f7f7;
+border:20px solid:cornflowerblue;
+}
+.left{
+/* border: 5px solid white; */
+display:inline-block;
+position:absolute;
+left:4px;
+top:12px;
+/* width:40px; */
+font-size: 30px;
+
+
+}
+.container th{
+font-weight: 800;
+}
+.navbar1{
+display:inline-block;
+background-color:rgb(241, 208, 16);
+padding: 45px 35px 25px 22px;
+color:rgb(241, 208, 16);
+margin:0px 0px;
+}
+.mid1{
+/* border:2px solid yellow; */
+display:block;
+width:83%;
+margin:2px 4px;
+position:absolute;
+left:220px;
+Top:20px;
+
+
+}
+.right img{
+width:240px;
+}
+.right{
+position:absolute;
+right:34px;
+top:2px;
+/* border:2px solid green; */
+/* display:inline-block; */
+left:820px
+}
+
+
+.navbar li {
+display:inline-block;
+color:white;
+text-decoration:none;
+padding:8px 23px;
+}
+/* .navbar li a:hover{
+text-decoration:underline;
+/* color:darkgray; */
+/* background-color: peru;
+border:4px solid gray;
+border-radius: 13px;
+}  */
+.btn{
+margin:10px 8px;
+background-color:rgb(17, 16, 16);
+color:white;
+font-size: 20px;
+padding: 5px 15px;
+border: 4px solid white;
+border-radius: 10px;
+cursor:pointer;
+}
+
+.btn:hover{
+background-color: peru;
+}
+.container{
+/* display: inline; */
+border:8px solid rgb(240, 205, 7);
+border-radius: 5px;
+margin:145px 10px;
+padding:20px;
+width:13%;
+Height:63%;
+position:absolute;
+top:80px;
+left:109px;
+background-color:black;
+
+}
+.container1{
+/* display: inline-block; */
+border:8px solid rgb(240, 205, 7);
+border-radius: 5px;
+margin:145px 30px;
+padding:20px;
+width:13%;
+Height:63%;
+position:absolute;
+top:80px;
+left:362px;
+background-color:black;
+
+}
+.container2{
+display: inline;
+border:8px solid rgb(240, 205, 7);;
+border-radius: 5px;
+margin:145px 60px;
+padding:20px;
+width:13%;
+Height:63%;
+position:absolute;
+top:80px;
+left:600px;
+background-color:black;
+
+}
+.container3{
+display: inline;
+border:8px solid rgb(240, 205, 7);;
+border-radius: 5px;
+margin:145px 90px;
+padding:20px;
+width:13%;
+Height:63%;
+position:absolute;
+top:80px;
+left:840px;
+background-color:black;
+
+}
+.container4{
+display: inline;
+border:8px solid rgb(240, 205, 7);;
+border-radius: 5px;
+margin:145px 110px;
+padding:20px;
+width:13%;
+Height:63%;
+position:absolute;
+top:80px;
+left:1086px;
+background-color:black;
+
+}
+.container h1{
+color: white;
+text-decoration:underline;
+
+background-color: rgb(49, 43, 43);
+font-size:50px;
+display:inline-block;
+}
+.navbar{
+display:inline-block;
+background-color: black;
+padding: 15px 200px;
+color:white;
+font-size: 50px;
+/* position: absolute;
+Top:1px; */
+
+}
+.Day1{
+display: inline;
+color:black;
+background-color: rgb(240, 205, 10);
+position: absolute;
+top: 180px;
+left:123px;
+font-size: xx-large;
+font-weight: bolder;
+padding:7px 27px;
+margin:-4px;
+}
+.Day2{
+display: inline;
+color:black;
+background-color: rgb(240, 205, 10);
+position: absolute;
+top: 180px;
+left:396px;
+font-size: xx-large;
+font-weight: bolder;
+padding:7px 27px;
+margin:-4px;
+}
+.Day3{
+display: inline;
+color:black;
+background-color: rgb(240, 205, 10);
+position: absolute;
+top: 180px;
+left:663px;
+font-size: xx-large;
+font-weight: bolder;
+padding:7px 27px;
+margin:-4px;
+}
+.Day4{
+display: inline;
+color:black;
+background-color: rgb(240, 205, 10);
+position: absolute;
+top: 180px;
+left:933px;
+font-size: xx-large;
+font-weight: bolder;
+padding:7px 27px;
+margin:-4px;
+}
+.Day5{
+display: inline;
+color:black;
+background-color: rgb(240, 205, 10);
+position: absolute;
+top: 180px;
+left:1200px;
+font-size: xx-large;
+font-weight: bolder;
+padding:7px 27px;
+margin:-4px;
+}
+
+/* .mid{
+/* border:2px solid yellow; */
+/* display:block;
+width:63%;
+margin:2px auto;
+position:absolute;
+left:520px;
+} */ 
+.form input{
+margin:5px;
+color:white;
+text-align: center;
+display:block;
+width:360px;
+font-size:20px;
+border-radius:5px ;
+padding:20px 20px;
+background-color: rgb(199, 180, 180);
+}

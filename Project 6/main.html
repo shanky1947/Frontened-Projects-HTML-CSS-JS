@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Regex</h2>
+
+<input id="unique" type="text">
+<button onclick="test()">Check</button>
+
+<p id="t"></p>
+
+<script>
+function test() {
+  var str = document.getElementById("unique").value;
+  var pat=/((red ([a-zA-Z0-9]+ ){0,2}(pickup|pick-up|pick up) truck) | ((pickup|pick-up|pick up) truck ([a-zA-Z0-9]+ ){0,2}red)) ([a-zA-Z0-9!@#$&()-`;:.+,/\"]+ ){0,} (((\$)([0-9]{1,4})((\,)?([0-9]{3}))(\.[0-9][0-9])?\b)?)/gi
+  var res;
+  if(str.match(pat))
+     {
+        document.getElementById("t").innerHTML = "String is valid";
+     }
+  else{
+        document.getElementById("t").innerHTML = "String is valid";
+    }
+}
+</script>
+
+</body>
+</html>

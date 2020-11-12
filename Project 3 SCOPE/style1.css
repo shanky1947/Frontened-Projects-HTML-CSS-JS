@@ -1,0 +1,157 @@
+body {
+    background-image: url('img.jpg');
+    color: #000305;
+    font-size: 87.5%;
+    font-family: Arial, 'Lucida Sans Unicode';
+    line-height: 1.5;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: #6495ED;
+}
+a:hover, a:active{
+    color: #6495ED;
+}
+.body {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.test{
+    float: left;
+}
+
+.mainheader img{
+    width: 200px;
+    height: 75px;
+}
+
+.mainheader nav{
+    background-color: #2980B9;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.mainheader nav ul{
+    list-style: none;
+}
+
+.mainheader nav ul li{
+    float: left;
+    display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 40px;
+    height: 20px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active ,
+.mainheader nav .active a:link, .mainheader nav .active a:visited {
+    background-color: #6495ED ;
+}
+
+.mainheader nav ul li a{
+    border-radius: 5px;
+}
+
+.content{
+    width: 70%;
+    float: left;
+}
+
+.topcontent{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2%;
+}
+
+.topcontent content img{
+    width: 400px;
+    height: 320px;
+}
+
+.sidebar{
+    width: 22%;
+    float: left;
+    background-color: #fff;
+    padding: 2% 3%;
+    margin-left: 2%;
+    border-radius: 5px;
+    margin-top: 1.5%;
+}
+
+.mainFooter{
+    width: 100%;
+    float: left;
+    background-color: #2980B9;
+    border-radius: 5px;
+    margin-top: 2%;
+    /* margin-bottom: 1%; */
+}
+
+.mainFooter p{
+    width: 92%;
+    margin: 10px auto;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.sidebar img{
+    height: 200px;
+    width: 310px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+
+button:hover {
+    opacity: 0.8;
+  }
+  
+ 
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+.container {
+    padding: 16px;
+  }
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }

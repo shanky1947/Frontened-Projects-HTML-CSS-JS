@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="time_table_new.css">
+  <link rel="stylesheet" href="E:\C\Web Dev\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="E:\C\Web Dev\fontawesome-free-5.14.0-web\css\all.css">
+</head>
+
+<body id="mine">
+  <!-- <img id="logo" src="icon.png" alt=""> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 p-0">
+        <nav class="navbar navbar-expand-md navbar-light bg-white" id="mainNavbar">
+          <a href="#" title="Website Title" rel="home"><svg width="4em" height="em" viewBox="0 0 16 16"
+              class="bi bi-person-square py-4" fill="#F3C74A" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+              <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            </svg></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnavbar"
+            aria-controls="topnavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="topnavbar" class="collapse navbar-collapse">
+            <ul id="menu-main-menu" class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" id="active" href="#"><i id="icon" class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i id="icon" class="far fa-calendar-alt"></i>Timetable</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i id="icon" class="fas fa-user-tie"></i>Faculty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i id="icon" class="fas fa-calendar-check"></i>Attendance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i id="icon" class="fas fa-book"></i>Course Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i id="icon" class="fas fa-file-powerpoint"></i>Submit Assigment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i id="icon" class="fas fa-file-code"></i>About Developers</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col rounded m-4" id="mainContent">
+        <div class="row">
+          <div class="col-md-9 p-0">
+            <h3>Time Table</h3>
+          </div>
+          <div class="col-md-3 p-0">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col my-4 mx-5">
+            <table border="1" cellpadding="20" cellspacing="2" width="1050px">
+              <thead>
+                <tr>
+                  <th style="background-color:yellow">Day </th>
+                  <th style="background-color:cornflowerblue">8:00-9:00 </th>
+                  <th style="background-color:cornflowerblue">9:00-10:00 </th>
+                  <th style="background-color:cornflowerblue">10:00-11:00 </th>
+                  <th style="background-color:cornflowerblue">11:00-12:00 </th>
+                  <th style="background-color:cornflowerblue">2:00-3:00</th>
+                  <th style="background-color:cornflowerblue">3:00-4:00</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td style="background-color:yellow">Mon</td>
+                  <td style="background-color:greenyellow">ALA (MATHS)</td>
+                  <td style="background-color:greenyellow">WEB MINING</td>
+                  <td style="background-color:greenyellow">NLP</td>
+                  <td style="background-color:greenyellow">IWP</td>
+                  <td style="background-color:greenyellow">NASSCOM</td>
+                  <td style="background-color:greenyellow">SOFT SKILLS</td>
+                </tr>
+
+                <tr>
+                  <td style="background-color:yellow">Tue</td>
+                  <td style="background-color:greenyellow" style="background-color:greenyellow">WB-MINING</td>
+                  <td style="background-color:greenyellow">NLP</td>
+                  <td style="background-color:greenyellow">IWP</td>
+                  <td style="background-color:greenyellow">NASSCOM</td>
+                  <td style="background-color:greenyellow">SOFTSKILLS</td>
+                  <td style="background-color:greenyellow">ALA (MATHS)</td>
+                </tr>
+
+                <tr>
+                  <td style="background-color:yellow">Wed</td>
+                  <td style="background-color:greenyellow">NLP</td>
+                  <td style="background-color:greenyellow">IWP</td>
+                  <td style="background-color:greenyellow">NASCOM</td>
+                  <td style="background-color:greenyellow">SOFT SKILLS</td>
+                  <td style="background-color:greenyellow">ALA</td>
+                  <td style="background-color:greenyellow">WEB-MINING</td>
+                </tr>
+
+                <tr>
+                  <td style="background-color:yellow">Thur</td>
+                  <td style="background-color:greenyellow">IWP</td>
+                  <td style="background-color:greenyellow">NASSCOM</td>
+                  <td style="background-color:greenyellow">SOFT-SKILLS</td>
+                  <td style="background-color:greenyellow">ALA</td>
+                  <td style="background-color:greenyellow">WEB-MINING</td>
+                  <td style="background-color:greenyellow">NLP</td>
+                </tr>
+
+                <tr>
+                  <td style="background-color:yellow">Fri</td>
+                  <td style="background-color:greenyellow">NASSCOM</td>
+                  <td style="background-color:greenyellow">SOFT-SKILLS</td>
+                  <td style="background-color:greenyellow">ALA</td>
+                  <td style="background-color:greenyellow">WB-MINING</td>
+                  <td style="background-color:greenyellow">NLP</td>
+                  <td style="background-color:greenyellow">IWP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

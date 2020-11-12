@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        .form {
+            text-align: center;
+            line-height: 2rem;
+            margin: 8rem 5rem 8rem 5rem;
+            border: 2px solid gray;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="#" onsubmit="return check()">
+            <label for="name">Name</label><br>
+            <input type="text" id="name1" name="name" placeholder="Enter patient name"><br>
+            <label for="age">Age</label><br>
+            <input type="text" id="age1" name="age" placeholder="Enter the age"><br>
+            <label for="gender">Gender</label><br>
+            <input type="text" id="gen1" name="gender" placeholder="Enter the gender"><br>
+            <label for="nov">No. of visits</label><br>
+            <input type="text" id="nov1" name="nov" placeholder="Enter the number of visits"><br>
+            <label for="date">Appointment Date</label><br>
+            <input type="text" id="d1" name="date" placeholder="Enter the Appointment date"><br>
+            <label for="dep">Department</label><br>
+            <input type="text" id="dep1" name="dep" placeholder="Enter the Department"><br>
+            <label for="sub">Submit</label><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </div>
+
+    <script>
+        function check(){
+            var user = document.getElementById('name1').value; 
+            var age = document.getElementById('age1').value;
+            var gender = document.getElementById('gen1').value;
+            var visits = document.getElementById('nov1').value;
+            var Appointment = document.getElementById('d1').value;
+            var department = document.getElementById('dep1').value;
+            // alert(user);
+            // alert(age);
+            // alert(gender);
+            // alert(visits);
+            // alert(Appointment);
+            // alert(department);
+            try{
+                var numbers = /[0-9]/g;
+                if(age.match(numbers)) {
+                } else {
+                    throw "error1";
+                }
+                if(visits.match(numbers)){}
+                else{
+                    throw "error2";
+                }
+                if(Appointment[2]=="5" || Appointment[3]=="5"){
+                    throw "error3";
+                }
+                if(department.match(/Paeditrician|Opthalmology|Cardiac|Dental/g)){}
+                else{
+                    throw "error4";
+                }
+            }
+            catch(error){
+                if (error=="error1"){
+                alert("Exception! Age is not number");
+                }
+            
+                if(error=="error2"){
+                alert("Exception! Number of visit should be number");
+                }
+            
+                if(error="error3"){
+                alert("Exception! Doctor is buys in this range");
+                }
+                if(error="error4"){
+                alert("Exception! Department is not given in list");
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
